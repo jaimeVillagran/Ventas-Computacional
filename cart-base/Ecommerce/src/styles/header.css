@@ -1,0 +1,76 @@
+.header {
+    margin-top: 80px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--darkBlue);
+    background-image: url("../img/Hero.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.containText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.title {
+    color: var(--white);
+    font-size: 60px;
+    font-weight: var(--titulo);
+}
+
+.parrafo {
+    color: var(--white);
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.btnProductos {
+    display: block;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: var(--lightBlue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 30px;
+}
+
+.btnProductos:hover {
+    box-shadow: 0 0 15px var(--lightBlue);
+}
+
+@media (max-width:700px) {
+    .header {
+        background-image: linear-gradient(rgba(81, 25, 187, 0.365), rgba(39, 117, 154, 0.365), black), url("../img/Hero.jpg");
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .title {
+        color: var(--white);
+        font-size: 30px;
+        font-weight: var(--titulo);
+    }
+
+    .containText {
+        align-items: center;
+        margin-left: 0px;
+        gap: 10px;
+        margin-bottom: 1.5rem;
+    }
+
+    .parrafo {
+        margin-bottom: 25px;
+    }
+}
